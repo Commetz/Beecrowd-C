@@ -1,4 +1,4 @@
-// 1000 Beecrowd (Hello World!)
+// 1000 Beecrowd - Hello World!
 // Por Commetz
 #include <stdio.h>
 
