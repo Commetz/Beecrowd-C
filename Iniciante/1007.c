@@ -1,4 +1,4 @@
-// 1007 Beecrowd (Diferença)
+// 1007 Beecrowd - Diferença
 // Por Commetz
 #include <stdio.h>
 
