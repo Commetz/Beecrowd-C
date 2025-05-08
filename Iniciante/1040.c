@@ -7,13 +7,11 @@ int main() {
 
     // Declaração das variáveis para as quatro notas e para o exame
     double a, b, c, d, media, exame;
-
     // Leitura das quatro notas
     scanf("%lf %lf %lf %lf", &a, &b, &c, &d);
 
     // Cálculo da média ponderada: pesos 2, 3, 4 e 1 respectivamente
     media = (2 * a + 3 * b + 4 * c + 1 * d) / 10;
-
     // Impressão da média inicial
     printf("Media: %.1lf\n", media);
 
@@ -41,9 +39,8 @@ int main() {
     // Verifica se o aluno foi aprovado diretamente (média >= 7.0)
     else if (media >= 7.0) {
         printf("Aluno aprovado.\n");
-    } 
-    // Caso a média seja inferior a 5.0, o aluno está reprovado
-    else {
+    } else {
+        // Caso a média seja inferior a 5.0, o aluno está reprovado
         printf("Aluno reprovado.\n");
     }
 
