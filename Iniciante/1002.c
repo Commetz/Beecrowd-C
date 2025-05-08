@@ -1,4 +1,4 @@
-// 1002 Beecrowd (Área Do Círculo)
+// 1002 Beecrowd - Área Do Círculo
 // Por Commetz
 #include <stdio.h>
 
