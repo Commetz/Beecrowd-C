@@ -1,4 +1,4 @@
-// 1012 Beecrowd (Área)
+// 1012 Beecrowd - Área
 // Por Commetz
 #include <stdio.h>
 // Incluindo a biblioteca matemática 
