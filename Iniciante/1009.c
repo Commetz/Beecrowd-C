@@ -1,4 +1,4 @@
-// 1009 Beecrowd (Salário Com Bônus)
+// 1009 Beecrowd - Salário Com Bônus
 // Por Commetz
 #include <stdio.h>
 
