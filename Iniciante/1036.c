@@ -1,7 +1,7 @@
-// 1036 Beecrowd (Fórmula de Bhaskara)
+// 1036 Beecrowd - Fórmula de Bhaskara
 // Por Commetz
 #include <stdio.h>
-// Biblioteca para funções matemáticas (como sqrt e pow)
+// Biblioteca para funções matemáticas "pow" e "sqrt"
 #include <math.h>
 
 int main() {
@@ -10,7 +10,6 @@ int main() {
     double a, b, c;
     // Variáveis para armazenar as raízes e o delta
     double r1, r2, delta;
-
     // Lê os coeficientes a, b e c do usuário
     scanf("%lf %lf %lf", &a, &b, &c);
 
@@ -33,6 +32,5 @@ int main() {
         printf("R2 = %.5lf\n", r2);  
     }
 
-    // Encerra o programa
     return 0;  
 }
