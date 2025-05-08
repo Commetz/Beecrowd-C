@@ -1,4 +1,4 @@
-// 1004 Beecrowd (Produto Simples)
+// 1004 Beecrowd - Produto Simples
 // Por Commetz
 #include <stdio.h>
 
