@@ -46,13 +46,24 @@
 </head>
 <body>
   <h1>Iniciante - Exercícios</h1>
-  <ul>
-    <li><button onclick="mostrarCodigo('1041.c')">1041.c</button></li>
-    <!-- Adicione mais arquivos aqui -->
+  <ul id="lista-arquivos">
+    <!-- Arquivos serão adicionados dinamicamente -->
   </ul>
   <pre id="codigo"></pre>
 
   <script>
+    const arquivos = ['1041.c', '1001.c', '1002.c', '1003.c']; // adicione aqui todos os arquivos que quiser
+
+    const lista = document.getElementById('lista-arquivos');
+    arquivos.forEach(arquivo => {
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.textContent = arquivo;
+      btn.onclick = () => mostrarCodigo(arquivo);
+      li.appendChild(btn);
+      lista.appendChild(li);
+    });
+
     async function mostrarCodigo(arquivo) {
       const response = await fetch(`${arquivo}`);
       if (response.ok) {
