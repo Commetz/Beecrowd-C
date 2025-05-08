@@ -1,4 +1,4 @@
-// 1006 Beecrowd (Média 2)
+// 1006 Beecrowd - Média 2
 // Por Commetz
 #include <stdio.h>
 
