@@ -1,6 +1,5 @@
 // 1037 Beecrowd - Intervalo
 // Por Commetz
-
 #include <stdio.h> 
 
 int main() {
