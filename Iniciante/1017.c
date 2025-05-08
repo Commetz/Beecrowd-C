@@ -1,4 +1,4 @@
-// 1017 Beecrowd (Gasto de Combustível)
+// 1017 Beecrowd - Gasto de Combustível
 // Por Commetz
 #include <stdio.h>
 
