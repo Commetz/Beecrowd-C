@@ -1,4 +1,4 @@
-// 1020 Beecrowd (Idade em Dias)
+// 1020 Beecrowd - Idade em Dias
 // Por Commetz
 #include <stdio.h>
 
@@ -6,7 +6,7 @@ int main() {
 
     // Declarando as variáveis de valores inteiros 
     int i, a, m, d;
-    // Lendo a variável de idade("i")
+    // Lendo a variável "i" (idade)
     scanf("%d", &i);
 
     // Calculando a quantidade de anos, meses e dias
