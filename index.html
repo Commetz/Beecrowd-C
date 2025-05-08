@@ -3,83 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Commetz</title>
+  <title>Commetz - Repositório</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
       background-color: #0f0f0f;
-      color: #fff;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
     h1 {
-      text-align: center;
+      color: #00ffc3;
       margin-bottom: 2rem;
-      color: #00ffc3;
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      max-width: 900px;
-      margin: auto;
+    .categoria {
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,255,200,0.1);
     }
-
-    .card {
-      background: #1c1c1c;
-      padding: 1.5rem;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      cursor: pointer;
-    }
-
-    .card:hover {
+    .categoria:hover {
+      background-color: #2a2a2a;
       transform: scale(1.05);
-      box-shadow: 0 0 12px #00ffc3;
-    }
-
-    .card h2 {
-      color: #00ffc3;
-      margin-bottom: 0.5rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>Categorias de Exercicios</h1>
-  <div class="grid">
-    <div class="card" onclick="window.location.href='Ad-Hoc/'">
-      <h2>Ad-Hoc</h2>
-      <p>Exercícios específicos e variados</p>
-    </div>
-    <div class="card" onclick="window.location.href='Estruturas e Bibliotecas/'">
-      <h2>Estruturas e Bibliotecas</h2>
-      <p>Uso de structs, funções e bibliotecas</p>
-    </div>
-    <div class="card" onclick="window.location.href='Iniciante/'">
-      <h2>Iniciante</h2>
-      <p>Questões básicas de C</p>
-    </div>
-    <div class="card" onclick="window.location.href='Matemática/'">
-      <h2>Matemática</h2>
-      <p>Problemas com foco em lógica e números</p>
-    </div>
-    <div class="card" onclick="window.location.href='Strings/'">
-      <h2>Strings</h2>
-      <p>Manipulação de textos e caracteres</p>
-    </div>
-  </div>
+  <h1>Commetz - Categorias</h1>
+
+  <a class="categoria" href="iniciante.html">Iniciante</a>
+  <a class="categoria" href="adhoc.html">Ad-Hoc</a>
+  <a class="categoria" href="matematica.html">Matemática</a>
+  <a class="categoria" href="strings.html">Strings</a>
+  <a class="categoria" href="estruturas.html">Estruturas e Bibliotecas</a>
+
 </body>
 </html>
