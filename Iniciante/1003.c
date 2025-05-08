@@ -1,4 +1,4 @@
-// 1003 Beecrowd (Soma Simples)
+// 1003 Beecrowd - Soma Simples
 // Por Commetz
 #include <stdio.h>
 
