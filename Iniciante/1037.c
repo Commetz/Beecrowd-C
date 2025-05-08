@@ -1,4 +1,4 @@
-// 1037 Beecrowd (Intervalo)
+// 1037 Beecrowd - Intervalo
 // Por Commetz
 
 #include <stdio.h> 
@@ -7,7 +7,6 @@ int main() {
 
     // Declara a variável que armazenará o valor de entrada
     double valor;
-
     // Lê o valor digitado pelo usuário
     scanf("%lf", &valor);
 
@@ -26,10 +25,10 @@ int main() {
     // Verifica se o valor está no intervalo (75,100]
     else if (valor > 75 && valor <= 100) {
         printf("Intervalo (75,100]\n");
-    } else {
+    } else { 
+        // Caso nenhum caso seja identificado
         printf("Fora de intervalo\n");
     }
 
-    // Finaliza o programa
     return 0;
 }
