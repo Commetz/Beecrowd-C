@@ -1,4 +1,4 @@
-// 1014 Beecrowd (Consumo)
+// 1014 Beecrowd - Consumo
 // Por Commetz
 #include <stdio.h>
 
