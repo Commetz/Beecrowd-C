@@ -1,4 +1,4 @@
-// 1013 Beecrowd (O Maior)
+// 1013 Beecrowd - O Maior
 // Por Commetz
 #include <stdio.h>
 
@@ -8,6 +8,8 @@ int main() {
     int a, b, c, maior1, maior2;
     // Lendo os valores de cada variável
     scanf("%d %d %d", &a, &b, &c);
+
+    // A função "abs" serve para retornar o valor absoluto, transformando números negativos em positivos
 
     // Usando a fórmula para descobrir o maior valor entra a ou b
     maior1 = (a + b + abs(a - b))/2;
