@@ -77,7 +77,7 @@
     }
 
     async function mostrarCodigo(arquivo) {
-      const response = await fetch(`Iniciante/${arquivo}`);
+      const response = await fetch(`${arquivo}`);
       if (response.ok) {
         const codigo = await response.text();
         document.getElementById('codigo').textContent = codigo;
