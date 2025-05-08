@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iniciante - Exercícios</title>
   <style>
     body {
@@ -46,26 +46,38 @@
 </head>
 <body>
   <h1>Iniciante - Exercícios</h1>
-  <ul id="lista-arquivos">
-    <!-- Arquivos serão adicionados dinamicamente -->
-  </ul>
-  <pre id="codigo"></pre>
+  <ul id="lista-arquivos"></ul>
+  <pre id="codigo">Carregando lista de arquivos...</pre>
 
   <script>
-    const arquivos = ['1041.c', '1001.c', '1002.c', '1003.c']; // adicione aqui todos os arquivos que quiser
+    async function carregarArquivos() {
+      try {
+        const response = await fetch('Iniciante/');
+        const html = await response.text();
 
-    const lista = document.getElementById('lista-arquivos');
-    arquivos.forEach(arquivo => {
-      const li = document.createElement('li');
-      const btn = document.createElement('button');
-      btn.textContent = arquivo;
-      btn.onclick = () => mostrarCodigo(arquivo);
-      li.appendChild(btn);
-      lista.appendChild(li);
-    });
+        const matches = [...html.matchAll(/href="([^"]+\\.c)"/g)];
+        const arquivos = matches.map(m => m[1]);
+
+        const lista = document.getElementById('lista-arquivos');
+        lista.innerHTML = '';
+
+        arquivos.forEach(arquivo => {
+          const li = document.createElement('li');
+          const btn = document.createElement('button');
+          btn.textContent = arquivo;
+          btn.onclick = () => mostrarCodigo(arquivo);
+          li.appendChild(btn);
+          lista.appendChild(li);
+        });
+
+        document.getElementById('codigo').textContent = 'Clique em um arquivo para visualizar o código.';
+      } catch (err) {
+        document.getElementById('codigo').textContent = 'Erro ao carregar lista de arquivos.';
+      }
+    }
 
     async function mostrarCodigo(arquivo) {
-      const response = await fetch(`${arquivo}`);
+      const response = await fetch(`Iniciante/${arquivo}`);
       if (response.ok) {
         const codigo = await response.text();
         document.getElementById('codigo').textContent = codigo;
@@ -73,6 +85,8 @@
         document.getElementById('codigo').textContent = 'Erro ao carregar o código.';
       }
     }
+
+    carregarArquivos();
   </script>
 </body>
 </html>
