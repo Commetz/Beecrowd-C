@@ -1,7 +1,7 @@
-// 1011 Beecrowd (Esfera)
+// 1011 Beecrowd - Esfera
 // Por Commetz
 #include <stdio.h>
-// Incluindo a biblioteca matemática 
+// Incluindo a biblioteca matemática para usar a função "pow" que serve para calcular potencias
 #include <math.h>
 
 int main() {
