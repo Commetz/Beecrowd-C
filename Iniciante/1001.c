@@ -1,4 +1,4 @@
-// 1001 Beecrowd (Extremamente Básico)
+// 1001 Beecrowd - Extremamente Básico
 // Por Commetz
 #include <stdio.h>
 
