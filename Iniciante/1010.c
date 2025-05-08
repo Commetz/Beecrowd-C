@@ -1,4 +1,4 @@
-// 1010 Beecrowd (Cálculo)
+// 1010 Beecrowd - Cálculo
 // Por Commetz
 #include <stdio.h>
 
