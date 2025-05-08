@@ -1,13 +1,11 @@
-// 1038 Beecrowd (Lanche)
+// 1038 Beecrowd - Lanche
 // Por Commetz
-
 #include <stdio.h>
 
 int main() {
     
     // Declaração das variáveis inteiras 'a' (código do produto) e 'b' (quantidade)
     int a, b;
-
     // Leitura dos valores de entrada
     scanf("%d %d", &a, &b);
 
@@ -32,6 +30,5 @@ int main() {
         printf("Total: R$ %.2lf\n", b * 1.50);
     }
 
-    // Finaliza o programa
     return 0;
 }
