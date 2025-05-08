@@ -1,9 +1,10 @@
-// 1035 Beecrowd (Teste de Seleção 1)
+// 1035 Beecrowd - Teste de Seleção 1
 // Por Commetz
 #include <stdio.h>
 
 int main() {
 
+    // Declarando 4 inteiros para verificar os valores
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
 
