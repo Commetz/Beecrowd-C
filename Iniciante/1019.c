@@ -1,4 +1,4 @@
-// 1019 Beecrowd (Conversão de Tempo)
+// 1019 Beecrowd - Conversão de Tempo
 // Por Commetz
 #include <stdio.h>
 
@@ -6,7 +6,7 @@ int main() {
 
     // Declarando as variáveis de valores inteiros 
     int t, h, m, s;
-    // Lendo a variável "t"
+    // Lendo a variável "t" (tempo)
     scanf("%d", &t);
 
     // Calculando a quantidade de horas, minutos e segundos
