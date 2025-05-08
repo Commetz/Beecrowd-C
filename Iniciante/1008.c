@@ -1,4 +1,4 @@
-// 1008 Beecrowd (Salário)
+// 1008 Beecrowd - Salário
 // Por Commetz
 #include <stdio.h>
 
@@ -14,8 +14,9 @@ int main() {
     // Afirmando o valor do salário 
     s = h * t;
 
-    // Exibindo a mensagem conforme o requisitado 
+    // Exibindo o número do funcionśrio
     printf("NUMBER = %d\n", n);
+    // Exibindo o salário do funcionário
     printf("SALARY = U$ %.2lf\n", s);
 
     return 0;
