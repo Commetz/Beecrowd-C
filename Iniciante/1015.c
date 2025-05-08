@@ -1,7 +1,7 @@
 // 1015 Beecrowd - Distância Entre Dois Pontos
 // Por Commetz
 #include <stdio.h>
-// Incluindo a biblioteca matemática para a usar a função "sqrt" que calcula a raiz quadrada de um número
+// Incluindo a biblioteca matemática para a usar a função "pow" e a "sqrt" que calcula a raiz quadrada de um número
 #include <math.h>
 
 int main() {
