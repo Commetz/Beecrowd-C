@@ -1,6 +1,5 @@
 // 1040 Beecrowd - Média 3
 // Por Commetz
-
 #include <stdio.h>
 
 int main() {
