@@ -1,23 +1,18 @@
-// 1020 Beecrowd - Idade em Dias
-// Por Commetz
 #include <stdio.h>
-
+#include <math.h>
+#include <stdlib.h>
+ 
 int main() {
-
-    // Declarando as variáveis de valores inteiros 
-    int i, a, m, d;
-    // Lendo a variável "i" (idade)
-    scanf("%d", &i);
-
-    // Calculando a quantidade de anos, meses e dias
-    a = i / 365;
-    m = (i % 365) / 30;
-    d = (i % 365) % 30;
-
-    // Exibindo as quantidades de anos, meses e dias
-    printf("%d ano(s)\n", a);
-    printf("%d mes(es)\n", m);
-    printf("%d dia(s)\n", d);
-  
+ 
+    int a, horas, minutos, segundos;
+    scanf("%d", &a);
+    
+    horas = a / 365;
+    minutos = (a % 365) / 30;
+    segundos = ((a % 365) % 30);
+    
+    
+    printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", horas, minutos, segundos);
+    
     return 0;
 }
